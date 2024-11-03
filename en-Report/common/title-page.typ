@@ -64,7 +64,7 @@
       columns: 2,
       align: (right, left),
       gutter: 2em,
-      "President: ", text(smallcaps(president)),
+      "Chairman: ", text(smallcaps(president)),
       "Reviewer: ", text(smallcaps(reviewer)),
       "Advisor: ", text(smallcaps(advisor)),
       "Co-advisor: ", text(smallcaps(guest)),
