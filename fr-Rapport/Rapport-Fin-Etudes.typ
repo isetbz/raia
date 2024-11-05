@@ -17,6 +17,7 @@
   rapporteur: rapporteur,
   industriel: industriel,
   date: date,
+  docref: docref,
   bibFile: "Biblio.bib",
   isAbstract: true,
 )
@@ -31,7 +32,8 @@
   president: president,
   rapporteur: rapporteur,
   industriel: industriel,
-  date: date
+  date: date,
+  docref: docref
 )
 
 #pagebreak()

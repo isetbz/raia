@@ -29,6 +29,7 @@
   rapporteur: "",
   industriel: "",
   date: none,
+  docref: none,
   bibFile: none,
   isAbstract: false,
   body,

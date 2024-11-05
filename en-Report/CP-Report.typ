@@ -29,7 +29,8 @@
   president: president,
   reviewer: reviewer,
   guest: guest,
-  date: date
+  date: date,
+  docref: docref
 )
 
 #pagebreak()

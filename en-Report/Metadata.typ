@@ -9,6 +9,7 @@
 #let reviewer = "Mr(s). ***"
 #let guest = "Mr(s). ***"
 #let date = "01 November 2024" // datetime.today().display()
+#let docref = "24.01"
 
 #let chap1 = "Project Context"
 #let chap2 = "Design Overview"

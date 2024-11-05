@@ -9,6 +9,7 @@
   reviewer: "",
   guest: "",
   date: none,
+  docref: none
 ) = {
  
   set page(
@@ -71,6 +72,8 @@
     )
   )
   )
+
+  place(dx: 90mm, dy: 230.5mm, center, rotate(-90deg, box(inset: 10pt, radius: 3pt, fill: luma(235), stroke: black, strong(smallcaps("ref: raia") + text(size: 10pt, docref)))))
 
   pagebreak()
 
