@@ -42,7 +42,6 @@
   )
 
   // --- Body font family ---
-
   set text(font: "Cambria")
 
   set text(
@@ -51,8 +50,9 @@
     lang: "en"
   )
 
-  show math.equation: set text(weight: 400)
-  
+  set enum(numbering: "1.a)")
+  set list(marker: ([•], [--]))
+
   // --- Headings ---
   show heading: set block(below: 0.85em, above: 1.75em)
 
@@ -77,6 +77,7 @@
   
   // --- Maths ---
   show math.equation: set text(font: "Cambria Math", size: 12pt)
+  show math.equation: set text(weight: 400)
   set math.equation(numbering: "(1)")
 
   show ref: it => {
