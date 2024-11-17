@@ -83,4 +83,9 @@
 #include "chaps/chpt2.typ"
 #include "chaps/chpt3.typ"
 #include "chaps/outro.typ"
+
+// --- APPENDICES ---
+// #set page(header: none)
+// #figure(chap("Appendix A: ***"), kind: "appendix", supplement: "appendix", numbering: "A.") <chp:appendix>
+
 // --- END OF DOCUMENT ---
