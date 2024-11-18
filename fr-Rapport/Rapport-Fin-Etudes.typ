@@ -88,7 +88,11 @@
 #include "chaps/outro.typ"
 
 // --- ANNEXES ---
-// #set page(header: none)
-// #figure(chap("Annexe A : ***"), kind: "appendix", supplement: "annexe", numbering: "A.") <chp:annexe>
+/*
+#set page(header: none)
+#figure(chap("Annexe A : ***"), kind: "appendix", supplement: "annexe", numbering: "A.") <chp:annexe>
+#set page(header: h(1fr) + emph("Annexe A : ***") + line(length: 100%))
+#pagebreak()
+*/
 
 // --- END OF DOCUMENT ---
