@@ -52,7 +52,7 @@
   )
   )))
 
-  place(dx: 0mm, dy: 180mm, center, text("Présenté le " + date + " à Bizerte devant le jury d'examen :"))
+  place(dx: 0mm, dy: 180mm, center, text("Présenté le " + date + " devant le jury d'examen :"))
   
   place(dx: 0mm, dy: 190mm, center, pad(
     top: 1em,
