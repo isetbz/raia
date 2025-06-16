@@ -8,8 +8,8 @@
 #let president = "M. (Mme) ***"
 #let rapporteur = "M. (Mme) ***"
 #let industriel = "M. (Mme) ***"
-#let date = "01 novembre 2024" // datetime.today().display()
-#let docref = "24.01"
+#let date = "15 juin 2026" // datetime.today().display()
+#let docref = "01.26"
 
 #let chap1 = "Contexte et problématique"
 #let chap2 = "Méthodologie"

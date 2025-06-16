@@ -8,8 +8,8 @@
 #let president = "Mr(s). ***"
 #let reviewer = "Mr(s). ***"
 #let guest = "Mr(s). ***"
-#let date = "01 November 2024" // datetime.today().display()
-#let docref = "24.01"
+#let date = "15 June 2026" // datetime.today().display()
+#let docref = "01.26"
 
 #let chap1 = "Project Context"
 #let chap2 = "Design Overview"
