@@ -2,19 +2,20 @@
 #import "@preview/colorful-boxes:1.2.0": outlinebox
 #import "../Metadata.typ": *
 
-// --- Titles of Chapters --- 
+// --- Titles of Chapters ---
 #let chap(myRef, notAck: true, numbering: none) = {
   v(8cm)
   place(
-    center, 
+    center,
     rect(
-      width: 15cm, 
-      height: 6cm,
-      radius: (rest: 5pt)
+      // width: 15cm,
+      // height: 6cm,
+      radius: (rest: 5pt),
+      inset: 25pt,
+      outset: 25pt,
     )[
-    #v(2.5cm)
-    #text(1.5em, smallcaps(heading(outlined: notAck, numbering: numbering, myRef)))
-    ] 
+      #text(1.5em, hyphenate: false, smallcaps(heading(outlined: notAck, numbering: numbering, myRef)))
+    ],
   )
 }
 
@@ -33,8 +34,7 @@
   bibFile: none,
   isAbstract: false,
   body,
-) = { 
-
+) = {
   // --- Set the document's geometric properties. ---
   set page(
     margin: (left: 30mm, right: 30mm, top: 40mm, bottom: 40mm),
@@ -44,21 +44,21 @@
   // --- Body font family ---
   set text(
     font: "Cambria",
-    size: 12pt, 
-    lang: "fr"
+    size: 12pt,
+    lang: "fr",
   )
-  
+
   set enum(numbering: "1.a)")
   set list(marker: ([•], [--]))
-  
+
   // --- Headings ---
   show heading: set block(below: 0.85em, above: 1.75em)
 
   show heading: it => {
-    if (it.level <= 3) and (it.level > 1){
-          block(counter(heading).display() + " " + it.body)
+    if (it.level <= 3) and (it.level > 1) {
+      block(counter(heading).display() + " " + it.body)
     } else {
-          block(it.body)
+      block(it.body)
     }
   }
 
@@ -72,7 +72,7 @@
   show figure.where(kind: image): set figure(supplement: "Fig.")
   show figure.where(kind: table): set figure(supplement: "Tab.")
   show figure.where(kind: table): set figure.caption(position: top)
-  
+
   // --- Maths ---
   show math.equation: set text(font: "Cambria Math", size: 12pt)
   show math.equation: set text(weight: 400)
@@ -81,22 +81,25 @@
   show ref: it => {
     let el = it.element
     if el != none and el.func() == math.equation {
-      link(el.location(), numbering(
-        "Eq. (1)",
-        counter(math.equation).at(el.location()).at(0)
-      ))
+      link(
+        el.location(),
+        numbering(
+          "Eq. (1)",
+          counter(math.equation).at(el.location()).at(0),
+        ),
+      )
     } else {
       it
     }
   }
 
-  // --- Body --- 
+  // --- Body ---
   body
 
   // --- Bibliography ---
   if bibFile != none {
-  	set page(numbering: "1")
-  	figure(chap("Bibliographie"), kind: "chapter", supplement: "Chapitre") // Bibliographie
+    set page(numbering: "1")
+    figure(chap("Bibliographie"), kind: "chapter", supplement: "Chapitre") // Bibliographie
     set page(header: h(1fr) + emph("Bibliographie") + line(length: 100%))
     bibliography("../" + bibFile, title: none, full: true, style: "ieee")
   }
@@ -105,26 +108,38 @@
   if isAbstract == true {
     set page(header: none, numbering: none)
     outlinebox(
+      title: "ملخص",
+      color: none,
+      width: auto,
+      radius: 2pt,
+      centering: false,
+    )[
+      #set text(size: 10pt, lang: "ar", font: "DejaVu Sans")
+      #arabstract
+      #line(length: 100%)
+      * كلمات مفاتيح --* #arkeywords
+    ]
+    outlinebox(
       title: "Résumé",
       color: none,
       width: auto,
       radius: 2pt,
-      centering: false
+      centering: false,
     )[
-      #resume
+      #frabstract
       #line(length: 100%)
-      _*Mots clés --*_ #motscles
+      _*Mots clés --*_ #frkeywords
     ]
     outlinebox(
       title: "Abstract",
       color: none,
       width: auto,
       radius: 2pt,
-      centering: false
+      centering: false,
     )[
-      #abstract
+      #enabstract
       #line(length: 100%)
-      _*Keywords  --*_ #keywords
+      _*Keywords --*_ #enkeywords
     ]
   }
 }

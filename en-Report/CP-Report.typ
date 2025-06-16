@@ -3,7 +3,7 @@
 #import "common/class.typ": *
 #import "common/title-page.typ": *
 
-#set document(author: author, title: title, keywords: keywords, date: auto)
+#set document(author: author, title: title, keywords: enkeywords, date: auto)
 
 // The project function is called with the content of the document.
 #show: report.with(
@@ -30,7 +30,7 @@
   reviewer: reviewer,
   guest: guest,
   date: date,
-  docref: docref
+  docref: docref,
 )
 
 #pagebreak()

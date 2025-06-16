@@ -18,8 +18,10 @@
 #let dedication = lorem(16)
 #let ack = lorem(32)
 
-#let resume = lorem(100)
-#let abstract = lorem(100)
+#let arabstract = lorem(50)
+#let enabstract = lorem(50)
+#let frabstract = lorem(50)
 
-#let motscles = "rapport, projet de fin d'études, typst"
-#let keywords = "report, capstone, typst"
+#let arkeywords = "تقرير, مشروع تخرج, typst"
+#let frkeywords = "rapport, projet de fin d'études, typst"
+#let enkeywords = "report, capstone, typst"

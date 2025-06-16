@@ -70,7 +70,7 @@
   )
   )
 
-  place(dx: 90mm, dy: 230.5mm, center, rotate(-90deg, box(inset: 10pt, radius: 3pt, fill: luma(235), stroke: black, strong(smallcaps("réf : raia") + text(size: 10pt, docref)))))
+  place(dx: 75mm, dy: 245mm, center, rotate(0deg, box(inset: 10pt, radius: 3pt, fill: luma(235), stroke: black, strong(smallcaps("réf : raia ") + text(size: 10pt, docref)))))
 
   pagebreak()
 
