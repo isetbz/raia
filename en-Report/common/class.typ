@@ -14,7 +14,7 @@
       inset: 25pt,
       outset: 25pt,
     )[
-      #v(2.5cm)
+      // #v(2.5cm)
       #text(1.5em, hyphenate: false, smallcaps(heading(outlined: notAck, numbering: numbering, myRef)))
     ],
   )
