@@ -2,8 +2,8 @@
 #import "../common/class.typ": *
 #show: report.with(isAbstract: false)
 #set page(header: none)
-#figure(chap(chap3, numbering: "1."), kind: "chapter", supplement: "Chapitre") <chp:chap3> // Chapter 3
-#set page(header: h(1fr) + emph(chap3) + line(length: 100%))
+#figure(chap("Chapitre 3 - " + chap3, numbering: "1."), kind: "chapter", supplement: "Chapitre") <chp:chap3> // Chapter 3
+#set page(header: h(1fr) + emph("Chapitre 3 - " + chap3) + line(length: 100%))
 #set heading(outlined: true, numbering: "1.") 
 /* ------------------------------------------------------------------------------ */ 
 
