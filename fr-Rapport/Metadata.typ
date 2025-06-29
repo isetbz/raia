@@ -11,6 +11,11 @@
 #let date = "15 juin 2026" // datetime.today().display()
 #let docref = "01.26"
 
+#let myGlossary = (
+  RAIA: "Robotique Avancée et Intelligence Artificielle",
+  ISET: "Institut Supérieur des Études Technologiques",
+)
+
 #let chap1 = "Contexte et problématique"
 #let chap2 = "Méthodologie"
 #let chap3 = "Implémentation"
