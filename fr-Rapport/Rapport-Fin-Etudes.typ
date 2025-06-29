@@ -59,7 +59,7 @@
 #pagebreak()
 #{
   show heading: none
-  heading(outlined: false, bookmarked: true)[Liste des figures]
+  heading(outlined: true, bookmarked: true)[Liste des figures]
 }
 #outline(
   title: [Liste des figures],
@@ -70,17 +70,22 @@
 #pagebreak()
 #{
   show heading: none
-  heading(outlined: false, bookmarked: true)[Liste des tableaux]
+  heading(outlined: true, bookmarked: true)[Liste des tableaux]
 }
 #outline(
   title: [Liste des tableaux],
   target: figure.where(kind: table),
 )
 
+// GLOSSAIRE
+#pagebreak()
+#show : init-glossary.with(myGlossary)
+#glossary(title: "Glossaire", sort: true, show-all: true)
+
 #set page(numbering: "1")
 #counter(page).update(1)
 
-// --- GI + Chaps + GC ---
+// --- IG + Chaps + CG ---
 #include "chaps/intro.typ"
 #include "chaps/chpt1.typ"
 #include "chaps/chpt2.typ"

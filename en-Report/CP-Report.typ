@@ -56,7 +56,7 @@
 #pagebreak()
 #{
   show heading: none
-  heading(outlined: false, bookmarked: true)[List of Figures]
+  heading(outlined: true, bookmarked: true)[List of Figures]
 }
 #outline(
   title: [List of Figures],
@@ -67,12 +67,17 @@
 #pagebreak()
 #{
   show heading: none
-  heading(outlined: false, bookmarked: true)[List of Tables]
+  heading(outlined: true, bookmarked: true)[List of Tables]
 }
 #outline(
   title: [List of Tables],
   target: figure.where(kind: table),
 )
+
+// GLOSSARY
+#pagebreak()
+#show: init-glossary.with(myGlossary)
+#glossary(sort: true, show-all: true)
 
 #set page(numbering: "1")
 #counter(page).update(1)
