@@ -1,5 +1,6 @@
 // DOCUMENT CLASS
 #import "@preview/colorful-boxes:1.2.0": outlinebox
+#import "@preview/glossy:0.8.0": *
 #import "../Metadata.typ": *
 
 // --- Titles of Chapters ---
@@ -43,9 +44,8 @@
   )
 
   // --- Body font family ---
-  set text(font: "Cambria")
-
   set text(
+    font: ("Cambria", "DejaVu Sans"),
     fallback: false,
     size: 12pt,
     lang: "en",
@@ -117,7 +117,7 @@
       radius: 2pt,
       centering: false,
     )[
-      #set text(size: 10pt, lang: "ar", font: "DejaVu Sans")
+      #set text(lang: "ar")
       #arabstract
       #line(length: 100%)
       * كلمات مفاتيح --* #arkeywords
