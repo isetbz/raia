@@ -1,6 +1,6 @@
 ![Typst](./typst.svg)
 
-`Typst` version 0.12. was used to create the supplied templates.
+`Typst` version 0.13.1. was used to create the supplied templates.
 
 ![Guide](./Guide.png)
 
