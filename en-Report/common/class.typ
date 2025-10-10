@@ -1,5 +1,5 @@
 // DOCUMENT CLASS
-#import "@preview/colorful-boxes:1.2.0": outlinebox
+#import "@preview/colorful-boxes:1.4.3": outline-colorbox
 #import "@preview/glossy:0.8.0": *
 #import "../Metadata.typ": *
 
@@ -110,9 +110,8 @@
   // --- Abstract | Résumé ---
   if isAbstract == true {
     set page(header: none, numbering: none)
-    outlinebox(
+    outline-colorbox(
       title: "ملخص",
-      color: none,
       width: auto,
       radius: 2pt,
       centering: false,
@@ -122,9 +121,8 @@
       #line(length: 100%)
       * كلمات مفاتيح --* #arkeywords
     ]
-    outlinebox(
+    outline-colorbox(
       title: "Abstract",
-      color: none,
       width: auto,
       radius: 2pt,
       centering: false,
@@ -133,9 +131,8 @@
       #line(length: 100%)
       _*Keywords --*_ #enkeywords
     ]
-    outlinebox(
+    outline-colorbox(
       title: "Résumé",
-      color: none,
       width: auto,
       radius: 2pt,
       centering: false,
