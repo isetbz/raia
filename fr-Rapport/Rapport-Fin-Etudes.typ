@@ -33,7 +33,7 @@
   rapporteur: rapporteur,
   industriel: industriel,
   date: date,
-  docref: docref
+  docref: docref,
 )
 
 #pagebreak()
@@ -79,7 +79,7 @@
 
 // GLOSSAIRE
 #pagebreak()
-#show : init-glossary.with(myGlossary)
+#show: init-glossary.with(theGlossary)
 #glossary(title: "Glossaire", sort: true, show-all: true)
 
 #set page(numbering: "1")

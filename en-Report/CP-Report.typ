@@ -76,7 +76,7 @@
 
 // GLOSSARY
 #pagebreak()
-#show: init-glossary.with(myGlossary)
+#show: init-glossary.with(theGlossary)
 #glossary(sort: true, show-all: true)
 
 #set page(numbering: "1")

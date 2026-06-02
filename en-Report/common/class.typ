@@ -1,6 +1,6 @@
 // DOCUMENT CLASS
 #import "@preview/colorful-boxes:1.4.3": outline-colorbox
-#import "@preview/glossy:0.8.0": *
+#import "@preview/glossy:0.9.1": *
 #import "../Metadata.typ": *
 
 // --- Titles of Chapters ---
