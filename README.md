@@ -1,6 +1,8 @@
 # Typst Report Templates
 
-Bilingual report templates for master's students at [ISET Bizerte](https://github.com/isetbz), available in **English** (`en-report/`) and **French** (`fr-rapport/`).
+Bilingual report templates for master's students at [ISET Bizerte](https://github.com/isetbz), available in **English** (`en-report/`) and **French** (`fr-rapport/`), and written using **Typst**.
+
+![Typst](typst.svg)
 
 ---
 
