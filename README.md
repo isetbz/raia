@@ -9,9 +9,9 @@ Bilingual report templates for master students at [ISET Bizerte](https://github.
 ```
 raia/
 ├── en-report/        # English report template
-│   └── main.typ
+│   └── CP-Report.typ
 ├── fr-rapport/       # French report template (rapport)
-│   └── main.typ
+│   └── Rapport-PFE.typ
 └── README.md
 ```
 
@@ -35,16 +35,16 @@ To produce a PDF once from a `.typ` file:
 
 ```bash
 # English template
-typst compile en-report/main.typ
+typst compile en-report/CP-Report.typ
 
 # French template
-typst compile fr-rapport/main.typ
+typst compile fr-rapport/Rapport-PFE.typ
 ```
 
-The PDF is written next to the source file (`main.pdf`) by default. You can specify a custom output path:
+The PDF is written next to the source file by default. You can specify a custom output path:
 
 ```bash
-typst compile en-report/main.typ output/my-report.pdf
+typst compile en-report/CP-Report.typ output/my-report.pdf
 ```
 
 ---
@@ -55,10 +55,10 @@ typst compile en-report/main.typ output/my-report.pdf
 
 ```bash
 # English template
-typst watch en-report/main.typ
+typst watch en-report/CP-Report.typ
 
 # French template
-typst watch fr-rapport/main.typ
+typst watch fr-rapport/Rapport-PFE.typ
 ```
 
 > [!TIP]
@@ -107,8 +107,8 @@ Any editor with LSP support (Neovim, Emacs, Helix…) can use [Tinymist](https:/
 ┌─────────────────────────────────────────────────┐
 │  Terminal              │  Editor (VS Code / Zed) │
 │                        │                         │
-│  $ typst watch         │  Edit  main.typ         │
-│    fr-rapport/main.typ │  Save  (Ctrl+S)         │
+│  $ typst watch         │  Edit  chpt1.typ         │
+│    fr-rapport/Rapport-PFE.typ │  Save  (Ctrl+S)         │
 │                        │                         │
 │  ✔ compiled in 120ms   │  PDF refreshes          │
 └─────────────────────────────────────────────────┘
@@ -116,7 +116,7 @@ Any editor with LSP support (Neovim, Emacs, Helix…) can use [Tinymist](https:/
 
 1. Open a terminal in the project root.
 2. Run `typst watch <folder>/main.typ`.
-3. Open `main.typ` in your preferred editor.
+3. Open `chapt1.typ` in your preferred editor.
 4. Edit and save — the PDF updates instantly.
 
 ---
