@@ -127,7 +127,6 @@ Any editor with LSP support (Neovim, Emacs, Helix…) can use [Tinymist](https:/
 - 🌐 [Typst Web App](https://typst.app/) *(no installation required)*
 - 🔌 [Tinymist Extension](https://github.com/Myriad-Dreamin/tinymist)
 - 💬 [Typst Community Discord](https://discord.gg/2uDybryKPe)
-- 📦 [ailab-isetbz Template on Typst Universe](https://typst.app/universe/package/ailab-isetbz)
 
 ---
 
