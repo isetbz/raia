@@ -2,8 +2,6 @@
 
 Un guide de référence rapide pour rédiger des documents avec **Typst** — un système de composition typographique moderne et performant.
 
-![Typst](typst.svg)
-
 > [!NOTE]
 > **Typst** utilise un langage de balisage concis inspiré de **Markdown** pour offrir un large éventail d'options de mise en forme. Il compile en PDF et se présente comme une alternative moderne à LaTeX.
 
@@ -74,7 +72,7 @@ Utilisez le mot-clé `#let` pour déclarer une variable.
 
 ````typ
 ```lang
-Bonjour!
+Bonjour !
 ```
 ````
 
