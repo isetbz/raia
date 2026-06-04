@@ -1,6 +1,6 @@
 # Typst Report Templates
 
-Bilingual report templates for master students at [ISET Bizerte](https://github.com/isetbz), available in **English** (`en-report/`) and **French** (`fr-rapport/`).
+Bilingual report templates for master's students at [ISET Bizerte](https://github.com/isetbz), available in **English** (`en-report/`) and **French** (`fr-rapport/`).
 
 ---
 
@@ -101,23 +101,23 @@ Any editor with LSP support (Neovim, Emacs, Helix…) can use [Tinymist](https:/
 
 ---
 
-## 6 — Workflow Summary
+## Workflow Summary
 
 ```
-┌─────────────────────────────────────────────────┐
-│  Terminal              │  Editor (VS Code / Zed) │
-│                        │                         │
-│  $ typst watch         │  Edit  chpt1.typ         │
-│    fr-rapport/Rapport-PFE.typ │  Save  (Ctrl+S)         │
-│                        │                         │
-│  ✔ compiled in 120ms   │  PDF refreshes          │
-└─────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────┐
+│  Terminal                             │  Editor (VS Code / Zed) │
+│                                       │                         │
+│  $ typst watch                        │  Edit  chpt1.typ        │
+│    fr-rapport/Rapport-PFE.typ         │  Save  (Ctrl+S)         │
+│                                       │                         │
+│  ✔ compiled in 120ms                  │  PDF refreshes          │
+└─────────────────────────────────────────────────────────────────┘
 ```
 
-1. Open a terminal in the project root.
-2. Run `typst watch <folder>/main.typ`.
-3. Open `chapt1.typ` in your preferred editor.
-4. Edit and save — the PDF updates instantly.
++ Open a terminal in the project root.
++ Run `typst watch <folder>/main.typ`.
++ Open `chapt1.typ` in your preferred editor.
++ Edit and save, the PDF updates instantly.
 
 ---
 
