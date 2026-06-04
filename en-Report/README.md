@@ -2,8 +2,6 @@
 
 A quick reference guide for writing documents using **Typst** — a modern, fast typesetting system.
 
-![Typst](typst.svg)
-
 > [!NOTE]
 > **Typst** uses a concise markup language inspired by **Markdown** to provide a wide range of formatting options. It compiles to PDF and is designed as a modern alternative to **LaTeX**.
 
@@ -72,9 +70,8 @@ Use the `#let` keyword to declare a variable.
 **Code block** — use triple backticks followed by the language name for syntax highlighting:
 
 ````typ
-```python
-def greet(name):
-    return f"Hello, {name}!"
+```lang
+Hello!
 ```
 ````
 
