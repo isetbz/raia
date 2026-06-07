@@ -45,7 +45,7 @@ typst compile en-report/CP-Report.typ
 typst compile fr-rapport/Rapport-PFE.typ
 ```
 
-> [!INFO]
+> [!NOTE]
 > The PDF is written next to the source file by default. You can specify a custom output path:
 > 
 > ```bash
