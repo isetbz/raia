@@ -12,9 +12,11 @@ Bilingual report templates for master's students at [ISET Bizerte](https://githu
 raia/
 ├── en-report/        # English report template
 │   └── CP-Report.typ
+│      ...
 ├── fr-rapport/       # French report template (rapport)
 │   └── Rapport-PFE.typ
-└── README.md
+│      ...
+└── README.md         # this file
 ```
 
 ---
@@ -43,17 +45,18 @@ typst compile en-report/CP-Report.typ
 typst compile fr-rapport/Rapport-PFE.typ
 ```
 
-The PDF is written next to the source file by default. You can specify a custom output path:
-
-```bash
-typst compile en-report/CP-Report.typ output/my-report.pdf
-```
+> [!INFO]
+> The PDF is written next to the source file by default. You can specify a custom output path:
+> 
+> ```bash
+> typst compile en-report/CP-Report.typ output/my-report.pdf
+> ```
 
 ---
 
 ## Watch Mode (Live Preview)
 
-`typst watch` recompiles the PDF automatically every time you save the file. Open the PDF in any viewer that supports live reload (e.g. **Sumatra PDF** on Windows, **Skim** on macOS, or **Evince** on Linux) and you get an instant preview loop while you edit.
+`typst watch` recompiles the PDF automatically every time you save the file. Open the PDF in any viewer that supports live reload _(e.g. **Sumatra PDF** on Windows, **Skim** on macOS, or **Evince** on Linux)_ and you get an instant preview loop while you edit.
 
 ```bash
 # English template
@@ -74,16 +77,16 @@ Stop the watcher at any time with `Ctrl+C`.
 
 ### Zed
 
-Typst support is built into Zed via the **Typst** extension. Install it from the extensions panel:
+**Typst** support is built into **Zed**. You can use **Zed** via the **Typst** extension. Install it from the extensions panel:
 
 1. Open the command palette (`Cmd+Shift+P` / `Ctrl+Shift+P`).
 2. Run `zed: extensions` and search for **Typst**.
 3. Click **Install**.
 
-Zed will provide syntax highlighting and LSP-powered features (autocompletion, go-to-definition, inline errors) automatically once the extension is active.
+**Zed** will provide syntax highlighting and LSP-powered features _(autocompletion, go-to-definition, inline errors)_ automatically once the extension is active.
 
 > [!TIP]
-> Pair Zed with `typst watch` running in the integrated terminal for a lightweight, distraction-free editing setup.
+> Pair **Zed** with `typst watch` running in the integrated terminal for a lightweight, distraction-free editing setup.
 
 ### VS Code
 
@@ -118,7 +121,7 @@ Any editor with LSP support (Neovim, Emacs, Helix…) can use [Tinymist](https:/
 
 + Open a terminal in the project root.
 + Run `typst watch <folder>/main.typ`.
-+ Open `chapt1.typ` in your preferred editor.
++ Open `chpt1.typ` in your preferred editor.
 + Edit and save, the PDF updates instantly.
 
 ---

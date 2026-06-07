@@ -3,7 +3,7 @@
 Un guide de référence rapide pour rédiger des documents avec **Typst** — un système de composition typographique moderne et performant.
 
 > [!NOTE]
-> **Typst** utilise un langage de balisage concis inspiré de **Markdown** pour offrir un large éventail d'options de mise en forme. Il compile en PDF et se présente comme une alternative moderne à LaTeX.
+> **Typst** utilise un langage de balisage concis inspiré de **Markdown** pour offrir un large éventail d'options de mise en forme. Il compile en PDF et se présente comme une alternative moderne à **LaTeX**.
 
 ---
 
@@ -29,8 +29,8 @@ Un guide de référence rapide pour rédiger des documents avec **Typst** — un
 | _Italique_ | `_texte_` | `_italique_` → _italique_ |
 | `Code en ligne` | `` `texte` `` | `` `code` `` |
 | Titre niveau 1 | `= Titre` | titre principal |
-| Titre niveau 2 | `== Sous-titre` | titre de second niveau |
-| Titre niveau 3 | `=== Section` | titre de troisième niveau |
+| Titre niveau 2 | `== Section` | titre de second niveau |
+| Titre niveau 3 | `=== Sous-section` | titre de troisième niveau |
 
 > [!TIP]
 > Les titres de **Typst** génèrent automatiquement une entrée dans la table des matières lorsque vous utilisez la fonction `#outline()`.
@@ -44,7 +44,8 @@ Un guide de référence rapide pour rédiger des documents avec **Typst** — un
 ```typ
 - Premier élément
 - Deuxième élément
-  - Élément imbriqué
+  - Premier élément imbriqué
+  - Deuxième élément imbriqué
 ```
 
 **Liste ordonnée** — utilisez `+` suivi d'un espace :
@@ -52,11 +53,12 @@ Un guide de référence rapide pour rédiger des documents avec **Typst** — un
 ```typ
 + Première étape
 + Deuxième étape
-  + Sous-étape
+  + Sous-étape n°1
+  + Sous-étape n°2
 ```
 
 > [!NOTE]
-> L'imbrication fonctionne pour les deux types de listes en indentant avec deux espaces.
+> L'imbrication fonctionne pour les deux types de listes en indentant avec des espaces.
 
 ---
 

@@ -1,6 +1,6 @@
 # Writing with Typst
 
-A quick reference guide for writing documents using **Typst** — a modern, fast typesetting system.
+A quick reference guide for writing documents using **Typst**, a modern, fast typesetting system.
 
 > [!NOTE]
 > **Typst** uses a concise markup language inspired by **Markdown** to provide a wide range of formatting options. It compiles to PDF and is designed as a modern alternative to **LaTeX**.
@@ -44,6 +44,7 @@ A quick reference guide for writing documents using **Typst** — a modern, fast
 - First item
 - Second item
   - Nested item
+  - Another nested item
 ```
 
 **Ordered list** — use `+` followed by a space:
@@ -52,10 +53,11 @@ A quick reference guide for writing documents using **Typst** — a modern, fast
 + First step
 + Second step
   + Sub-step
+  + Another sub-step
 ```
 
 > [!NOTE]
-> Nesting works for both list types by indenting with two spaces.
+> Nesting works for both list types by indenting with spaces.
 
 ---
 
@@ -118,7 +120,7 @@ As seen in @fig:LABEL, the image is rendered beautifully.
 
 ## Math
 
-Typst has built-in, **LaTeX**-inspired math support.
+**Typst** has built-in, **LaTeX**-inspired math support.
 
 **Inline math** — surround with `$`:
 
@@ -144,7 +146,7 @@ $ sum_(k=1)^n k = (n(n+1)) / 2 $
 As discussed in @sec:intro, ...
 ```
 
-**Bibliography** — point Typst to a `.bib` file and cite inline:
+**Bibliography** — point **Typst** to a `.bib` file and cite inline:
 
 ```typ
 #bibliography("references.bib")
