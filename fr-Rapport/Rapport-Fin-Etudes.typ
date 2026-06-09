@@ -5,7 +5,6 @@
 
 #set document(author: author, title: title, keywords: frkeywords, date: auto)
 
-// The project function is called with the content of the document.
 #show: report.with(
   title: title,
   titre: titre,
@@ -44,7 +43,7 @@
 #pagebreak()
 #ack
 
-/* ### Raport du PFE ### */
+/* ### Rapport PFE ### */
 
 // TOC
 #set page(numbering: "i")
@@ -100,4 +99,4 @@
 #pagebreak()
 */
 
-// --- END OF DOCUMENT ---
+// --- FIN DU DOCUMENT ---
